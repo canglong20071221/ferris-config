@@ -2,14 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Remote for nxtkb removed because it is no longer used
 
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    # Project 'zmk-behavior-report' REMOVED to fix build error
 
   self:
     path: config
