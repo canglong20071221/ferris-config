@@ -18,12 +18,14 @@
 #
 ---
 include:
-  # keyboard: cradio sweep
+  # Keyboard: Ferris Sweep
   - board: nice_nano
     shield: cradio_left
     snippet: studio-rpc-usb-uart
-    #snippet: zmk-usb-logging
+    # snippet: zmk-usb-logging
   - board: nice_nano
     shield: cradio_right
+  
+  # Settings Reset (The "Nuclear" Fix for Bluetooth)
   - board: nice_nano
     shield: settings_reset
