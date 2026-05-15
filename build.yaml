@@ -1,24 +1,19 @@
 # This file generates the GitHub Actions matrix.
-# For simple board + shield combinations, add them to the top level board and
-# shield arrays, for more control, add individual board + shield combinations
-# to the `include` property. You can also use the `cmake-args` property to
-# pass flags to the build command and `artifact-name` to assign a name to
-# distinguish build outputs from each other:
 ---
 include:
   # Keyboard: Ferris Sweep (Left / Central)
-  - board: nice_nano_v2
+  - board: nice_nano@v2
     shield: cradio_left
     snippet: studio-rpc-usb-uart
     artifact-name: sweep_left
     # snippet: zmk-usb-logging
     
   # Keyboard: Ferris Sweep (Right / Peripheral)
-  - board: nice_nano_v2
+  - board: nice_nano@v2
     shield: cradio_right
     artifact-name: sweep_right
   
   # Settings Reset (The "Nuclear" Fix for Bluetooth)
-  - board: nice_nano_v2
+  - board: nice_nano@v2
     shield: settings_reset
     artifact-name: sweep_settings_reset
